@@ -1,6 +1,7 @@
 while True:
     try:
         n = input()
+        commands = ('/help', '/exit')
         if n == '/help':
             print('The program calculates the sum and the rest of numbers')
             continue
@@ -9,7 +10,7 @@ while True:
         elif n == '/exit':
             print('Bye!')
             break
-        elif n[0] == '/' and n != '/exit' and n != '/help':
+        elif n not in commands:
             print('Unknown command')
         print(eval(n))
     except Exception:
