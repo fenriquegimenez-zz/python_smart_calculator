@@ -8,5 +8,4 @@ while True:
     elif n == '/exit':
         print('Bye!')
         break
-    nums = n.split()
     print(eval(n))
