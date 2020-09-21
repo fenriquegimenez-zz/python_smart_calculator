@@ -9,4 +9,4 @@ while True:
         print('Bye!')
         break
     nums = n.split()
-    print(sum([int(i) for i in nums]))
+    print(eval(n))
